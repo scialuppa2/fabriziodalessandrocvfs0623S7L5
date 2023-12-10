@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="assets/img/football_logo.jpg" type="image/x-icon">
+  <title>Back office</title>
+  <style>
+    body {
+      background-image: url("/assets/img/sfondo_stadio.jpg");
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+    }
+    .backgroundMain {
+      background: linear-gradient(to right, #d33d32, #d9a89c);
+    }
+    footer {
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+  </style>
+ 
+</head>
+
+<body>
+  <!--Navbar-->
+  <header style="position:sticky; top:0; z-index:1">
+    <div class="navbar navbar-dark bg-danger shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="assets/img/backoffice.svg" alt="logo" width="60px">
+          <strong class="ms-5">Back Office</strong>
+        </a>
+
+        </button>
+        <button class="btn btn-secondary mt-3" style="position:sticky; top: 75px; z-index:1"><a href="homePage.html"
+            class="text-white text-decoration-none">Home Page</a></button>
+      </div>
+    </div>
+  </header>
+
+  <!--Form per aggiunta prodotti-->
+  <div class="container">
+    <form class="mt-3">
+      <input type="text" name="name" id="name" placeholder="Name" class="m-1" required />
+      <input type="text" name="description" id="description" placeholder="description" class="m-1" required />
+      <input type="text" name="brand" id="brand" placeholder="brand" class="m-1" required />
+      <input type="text" name="imageUrl" id="imageUrl" placeholder="imageUrl" class="m-1" required />
+      <input type="number" name="price" id="price" placeholder="price" class="m-1" required />
+      <button type="submit" id="inputButton" class="m-1 btn btn-danger">Add Product</button>
+      <button type="reset" class="ms-3 mt-1 mb-2 btn btn-danger">Reset</button>
+    </form>
+
+    <div id="modify-form-container"></div>
+
+    <!--Prodotti dello shop-->
+    <main role="main" class="mt-4">
+      <div class=" backgroundMain  pb-4">
+        <div class="container">
+          <div class="row" id="books-container">
+
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="text-muted">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Rights reserved to &copy; Fabrizio D'Alessandro s.p.a.</p>
+      </div>
+    </footer>
+  </div>
+
+
+  <script type="module" src="js/office.js"></script>
+  <script src="../node_modules/@popperjs/core/dist/umd/enums.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="assets/img/football_logo.jpg" type="image/x-icon" />
+  <title>Details</title>
+  <style>
+    .backgroundMain {
+      background-image: url("/assets/img/sfondo_stadio.jpg");
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+
+    }
+
+    body {
+      background: linear-gradient(to right, #bffffa, #567dfd);
+    }
+
+    .card {
+      border-radius: 15px;
+    }
+
+    .img-container {
+      overflow: hidden;
+      border-radius: 15px;
+    }
+
+    .img-fluid {
+      transition: transform 1s;
+    }
+
+    .img-container:hover .img-fluid {
+      transform: scale(1.5);
+    }
+
+    .product-info {
+      color: #343a40;
+    }
+  </style>
+
+</head>
+
+
+<body class="backgroundMain">
+  <!--Navbar-->
+  <header>
+    <div class="navbar navbar-dark bg-primary shadow-sm">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="assets/img/details.svg" alt="logo" width="30px" />
+          <strong class="m-2">Details</strong>
+        </a>
+        <button class="btn btn-secondary mt-3" style="position:sticky; top: 75px; z-index:1"><a href="homePage.html"
+            class="text-white text-decoration-none">Home Page</a></button>
+      </div>
+    </div>
+  </header>
+
+
+  <!--Scheda prodotto-->
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-md-12" id="product-details"></div>
+    </div>
+  </div>
+
+  
+  <script src="js/details.js" defer type="module"></script>
+  <script src="../node_modules/@popperjs/core/dist/umd/enums.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+
+</html>

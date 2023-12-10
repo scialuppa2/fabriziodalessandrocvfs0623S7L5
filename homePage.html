@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css" />
+  <link rel="icon" href="/assets/img/football_logo.jpg" type="image/x-icon" />
+  <title>Football scarves Shop</title>
+
+  <style>
+    
+    body {
+      background-image: url("/assets/img/sfondo_stadio.jpg");
+      background-repeat: no-repeat;
+      background-size: 100vw 100vh;
+      background-attachment: fixed;
+    }
+
+    h1{
+      text-align: center;
+      font-size: 6em;
+      color: rgba(15, 1, 66, 0.728);
+      background-color: rgba(253, 249, 249, 0.626);
+    }
+    
+    .backgroundMain {
+      background: linear-gradient(to right, #798b8a, #dce5ff);
+    }
+
+    footer {
+      padding-top: 2rem;
+      padding-bottom: 1rem;
+      text-align: center;
+    }
+  </style>
+  
+</head>
+
+<body>
+  <!--Navbar-->
+  <header style="position: sticky; top: 0; z-index: 1">
+    <div class="navbar navbar-dark bg-secondary shadow-sm">
+      <div class="container d-flex justify-content-between">
+
+        <a href="#" class="navbar-brand d-flex align-items-center">
+          <img src="assets/img/homepage.svg" alt="logo" width="30px" />
+          <div class="spinner-border" style="color: rgb(249, 247, 247);" role="status" id="spinner">
+
+          </div>
+          <strong class="ms-5">HOME PAGE</strong>
+        </a>
+        <button class="btn btn-danger mt-3" style="position:sticky; top: 75px; z-index:1"><a href="Office.html"
+          class="text-white text-decoration-none">Back Office</a></button>
+      </div>
+    </div>
+  </header>
+
+  <!--Titolo e prodotti in vendita-->
+  <h1>FOOTBALL SCARVES SHOP</h1>
+  <div class="container mt-5">
+    <main role="main">
+      <div class="album py-3 bg-light backgroundMain">
+        <div class="container">
+          <div class="row" id="books-container"></div>
+        </div>
+      </div>
+    </main>
+
+    <!--Footer-->
+    <footer class="text-muted backgroundMain">
+      <div class="container">
+        <p class="float-right">
+          <a href="#">Back to top</a>
+        </p>
+        <p>Rights reserved to &copy; Fabrizio D'Alessandro s.p.a.</p>
+      </div>
+    </footer>
+  </div>
+
+
+
+  <script type="module" src="js/homePage.js" defer></script>
+  <script src="../node_modules/@popperjs/core/dist/umd/enums.min.js"></script>
+  <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+</body>
+
+</html>
